@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" 
+        integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .nav {
+            padding: 10px;
+            background-color: black;
+            color: whitesmoke;
+            text-align: right;
+        }
+
+        button {
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        .nav button:hover {
+            background-color: #c11325;
+            color: white;
+        }
+
+        .nav button:hover a {
+            color: white;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .fa-solid {
+            color: black;
+        }
+
+        .log-box {
+            width: 100%;
+            /* background-image: url(images/home.jpg); */
+            background-position: center;
+            background-size: fill;
+            background-repeat: no-repeat;
+            height: 91.4vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #42047e 0%, rgba(9,9,121,1) 44%, #07f49e 100%);
+
+        }
+
+        .log {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            /* background-color: rgba(0, 0, 0, 0.7); */
+            border-radius: 10%;
+        }
+
+        input {
+            margin: 2px 0;
+            border-radius: 5px;
+            border: 2px solid #c11325;
+            font-size: 15px;
+            padding: 10px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: transparent;
+
+            color: white;
+            width: 100%;
+        }
+
+        .butt {
+            background-color: #c11325;
+            color: white;
+            font-weight: bolder;
+            letter-spacing: 3px;
+            width: 100%;
+        }
+
+        form {
+            width: 80%;
+            color: white;
+        }
+
+        .b1 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="login.html"><i class="fa-solid fa-user"></i> Log in</a></button>
+    </div>
+
+    <div class="log-box">
+        <div class="log">
+            <form action="sign" method="post">
+                Name: <input type="text" name="name" placeholder="Enter your name"><br>
+                Email: <input type="text" name="email" placeholder="Enter your email"><br>
+                Password: <input type="text" name="password" placeholder="Enter your password"><br>
+                Phone: <input type="text" name="phone" placeholder="Enter your phone number"><br>
+                <input type="submit" value="Sign In" class="butt">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

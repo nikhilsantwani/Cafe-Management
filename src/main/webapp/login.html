@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            /* font-size: 20px; */
+        }
+        ::placeholder
+        {
+            color:white;
+        }
+        body{
+            height: 100vh;
+        }
+        .nav{
+            padding: 10px;
+            background-color: black;
+            color:  #42047e 0%,whitesmoke;
+            text-align: right;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 30px;
+            /* border: 2px solid black;     */
+            border: none;
+            cursor: pointer;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        .nav button:hover{
+            background-color: #c11325;
+            color: white;
+        }
+        .nav button:hover a{
+            color: white;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .fa-solid{
+            color:black;
+        }
+        .log-box{
+            width: 100%;
+            background-image: url(https://unsplash.com/photos/brown-wooden-dining-table-near-white-and-brown-mini-bar-jUOaONoXJQk);
+            background-position: center;
+            background-size:fill;
+            background-repeat: no-repeat;
+            height: 92.4vh;
+            
+            background: linear-gradient(90deg, #42047e 0%, rgba(9,9,121,1) 44%, #07f49e 100%);
+            color: white;
+        }
+        .log{
+            /* border: 2px solid black; */
+            width: 100%;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            border-radius: 10%;
+        }
+        input{
+            margin: 20px 0px;
+            border-radius:5px;
+            border: 2px solid #c11325;
+            font-size: 15px;
+            padding: 10px;
+            border-top:none ;
+            border-left:none ;
+            border-right: none;
+            background-color: transparent;
+            /* color: black; */
+        }
+        .butt{
+            background-color:#c11325;
+            color: white;
+            font-weight: bolder;
+            letter-spacing: 3px;
+            width: 100%;
+        }
+        form{
+            width: 70%;
+            color: white;
+            /* border: 2px solid black; */
+        }
+        .b1
+        {
+            margin:0px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button><a href="index.html">Home</a></button>
+       <button><a href="sign.html"><i class="fa-solid fa-user"></i>Sign Up</a></button>
+    </div>
+    <div class="log-box">
+        <div class="log">
+
+            <form action="log" method="post">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br>
+                <label for="pass">Password:</label>
+                <input type="text" id="pass" name="pass" required><br>
+                <input type="submit" class="butt" value="Login">
+            </form>
+    
+        </div>
+    </div>
+</body>
+</html>
